@@ -8,13 +8,13 @@ function removeTransition(e) {
     const key = document.querySelector(`div[data-key="${e.keyCode}"]`);
     if (!audio) return;
     key.classList.add('playing');
-    /*audio.currentTime = 0;*/
+    audio.currentTime = 0;
     audio.play();
   }
-  
-  function playSound(url) {
+  function play(url) {
     new Audio(url).play();
   }
+
   const keys = Array.from(document.querySelectorAll('.key'));
   keys.forEach(key => key.addEventListener('transitionend', removeTransition));
   window.addEventListener('keydown', playSound);
