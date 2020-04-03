@@ -1,0 +1,46 @@
+vc_single_image-img {
+    position: relative;
+    transition: all 2.5s ease-in-out !important;
+}
+
+#overlay {
+    width: 400px;
+    height: 0px;
+    background-repeat: no- repeat;
+}
+
+.container {
+    width: 240px;
+    height: 300px;
+}
+
+:root {
+    --base: #EFEFEF;
+    --spacing: 10px;
+    --blur: 10px;
+}
+
+img {
+    margin-top: 5%;
+    max-height: 400px;
+    padding: var(--spacing);
+    background: var(--base);
+    filter: blur(var(--blur));
+}
+
+/*
+    misc styles, nothing to do with CSS variables
+  */
+
+body {
+    text-align: center;
+    background: #193549 url(img.jpg);
+    color: #9e9898;
+    font-family: 'helvetica neue', sans-serif;
+    font-weight: 50;
+    font-size: 25px;
+}
+
+input {
+    width: 100px;
+}
