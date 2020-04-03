@@ -6,6 +6,7 @@ const audio = document.querySelector(`audio[id ="tick"]`);
 function rain(){
 setTimeout(function(){
   document.getElementById('rain').play();
+  document.getElementById('path').play();
 },1000)
 }
 
