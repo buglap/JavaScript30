@@ -2,7 +2,10 @@ const secondHand = document.querySelector('.second-hand');
 const minsHand = document.querySelector('.min-hand');
 const hourHand = document.querySelector('.hour-hand');
 const audio = document.querySelector(`audio[id ="tick"]`);
-
+const rain = document.querySelector(`audio[id ="rain"]`);
+setTimeout(function(){
+  document.getElementById('rain').play();
+})
 
 function setDate() {
   const now = new Date();
